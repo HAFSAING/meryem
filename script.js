@@ -323,8 +323,10 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.lang-btn').forEach(function (btn) {
     btn.addEventListener('click', function () {
       applyLanguage(btn.getAttribute('data-lang'));
-      var navLinks = document.getElementById('navLinks');
-      if (navLinks) navLinks.classList.remove('open');
+      var navLinksEl = document.getElementById('navLinks');
+      var navOverlayEl = document.getElementById('navOverlay');
+      if (navLinksEl) navLinksEl.classList.remove('open');
+      if (navOverlayEl) navOverlayEl.classList.remove('open');
     });
   });
 
@@ -334,17 +336,29 @@ document.addEventListener('DOMContentLoaded', function () {
 
   /* --- mobile menu --- */
   var menuToggle = document.getElementById('menuToggle');
+  var menuClose = document.getElementById('menuClose');
   var navLinks = document.getElementById('navLinks');
+  var navOverlay = document.getElementById('navOverlay');
+
+  function openMenu() {
+    navLinks.classList.add('open');
+    if (navOverlay) navOverlay.classList.add('open');
+    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'true');
+  }
+  function closeMenu() {
+    navLinks.classList.remove('open');
+    if (navOverlay) navOverlay.classList.remove('open');
+    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
+  }
+
   if (menuToggle && navLinks) {
     menuToggle.addEventListener('click', function () {
-      var isOpen = navLinks.classList.toggle('open');
-      menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      if (navLinks.classList.contains('open')) closeMenu(); else openMenu();
     });
+    if (menuClose) menuClose.addEventListener('click', closeMenu);
+    if (navOverlay) navOverlay.addEventListener('click', closeMenu);
     navLinks.querySelectorAll('a').forEach(function (a) {
-      a.addEventListener('click', function () {
-        navLinks.classList.remove('open');
-        menuToggle.setAttribute('aria-expanded', 'false');
-      });
+      a.addEventListener('click', closeMenu);
     });
   }
 
