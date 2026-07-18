@@ -34,10 +34,12 @@ var translations = {
     "courses.card4.desc": "Ateliers d'expression orale pour parler sans crainte, en français et en anglais.",
 
     "pricing.title": "Nos tarifs",
-    "pricing.subtitle": "Offre de rentrée : profitez des prix promo, valables pour un temps limité.",
+    "pricing.subtitle": "Choisissez le niveau de votre enfant pour découvrir les formules et les prix.",
     "pricing.badge": "Le plus choisi",
     "pricing.per_month": "/mois",
-    "pricing.choose": "Choisir ce pack",
+    "pricing.from": "à partir de",
+    "pricing.view": "Voir les formules",
+    "pricing.choose": "Choisir cette formule",
     "pricing.promo": "Offre promo valable jusqu'à la fin du mois — Réservez votre place dès maintenant",
 
     "pricing.card1.name": "Petite section",
@@ -92,7 +94,23 @@ var translations = {
     "contact.success": "Merci ! Votre demande a bien été envoyée. Meryem vous contactera très vite.",
     "contact.note": "Vos informations sont transmises directement à Meryem via Google Sheets, en toute simplicité.",
 
-    "footer.copyright": "© 2026 Meryem El-Mahdi — Cours de Français & Anglais pour enfants. Tous droits réservés."
+    "footer.copyright": "© 2026 Meryem El-Mahdi — Cours de Français & Anglais pour enfants. Tous droits réservés.",
+
+    "reviews.title": "Ce que disent les parents",
+    "reviews.subtitle": "Des familles satisfaites des progrès de leurs enfants.",
+    "reviews.r1.text": "Mon fils adore ses cours avec Meryem. Il chante en anglais à la maison maintenant !",
+    "reviews.r1.author": "Sara, maman de Yassine (Grande section)",
+    "reviews.r2.text": "Un vrai suivi, des rapports chaque mois, et ma fille a gagné énormément en confiance à l'oral.",
+    "reviews.r2.author": "Karim, papa de Lina (Primaire, 2ème année)",
+    "reviews.r3.text": "Cours bien organisés, Meryem est patiente et à l'écoute. Je recommande à 100%.",
+    "reviews.r3.author": "Imane, maman de Adam (Petite section)",
+
+    "level.back": "Retour aux tarifs",
+    "level.formulas_title": "Nos formules pour ce niveau",
+    "level.formulas_subtitle": "Choisissez le rythme qui convient le mieux à votre enfant.",
+    "level.cta_title": "Prêt à commencer ?",
+    "level.cta_subtitle": "Remplissez le formulaire d'inscription sur la page d'accueil, Meryem vous contactera rapidement.",
+    "level.cta_button": "Aller au formulaire d'inscription"
   },
 
   en: {
@@ -127,9 +145,11 @@ var translations = {
     "courses.card4.desc": "Speaking workshops to talk without fear, in French and English.",
 
     "pricing.title": "Our pricing",
-    "pricing.subtitle": "Back-to-school offer: enjoy promo prices, for a limited time.",
+    "pricing.subtitle": "Choose your child's level to see plans and prices.",
     "pricing.badge": "Most popular",
     "pricing.per_month": "/month",
+    "pricing.from": "starting at",
+    "pricing.view": "See plans",
     "pricing.choose": "Choose this plan",
     "pricing.promo": "Promo offer valid until the end of the month — book your spot now",
 
@@ -185,7 +205,23 @@ var translations = {
     "contact.success": "Thank you! Your request has been sent. Meryem will contact you shortly.",
     "contact.note": "Your information is sent directly to Meryem via Google Sheets, simply and securely.",
 
-    "footer.copyright": "© 2026 Meryem El-Mahdi — French & English courses for children. All rights reserved."
+    "footer.copyright": "© 2026 Meryem El-Mahdi — French & English courses for children. All rights reserved.",
+
+    "reviews.title": "What parents say",
+    "reviews.subtitle": "Families happy with their children's progress.",
+    "reviews.r1.text": "My son loves his lessons with Meryem. He now sings in English at home!",
+    "reviews.r1.author": "Sara, Yassine's mom (Final preschool year)",
+    "reviews.r2.text": "Real follow-up, monthly reports, and my daughter gained a lot of confidence speaking.",
+    "reviews.r2.author": "Karim, Lina's dad (Primary, grade 2)",
+    "reviews.r3.text": "Well-organized lessons, Meryem is patient and attentive. I fully recommend her.",
+    "reviews.r3.author": "Imane, Adam's mom (Early preschool)",
+
+    "level.back": "Back to pricing",
+    "level.formulas_title": "Our plans for this level",
+    "level.formulas_subtitle": "Choose the pace that suits your child best.",
+    "level.cta_title": "Ready to get started?",
+    "level.cta_subtitle": "Fill in the enrollment form on the home page, Meryem will contact you shortly.",
+    "level.cta_button": "Go to enrollment form"
   },
 
   ar: {
@@ -220,10 +256,12 @@ var translations = {
     "courses.card4.desc": "ورشات للتعبير الشفهي للتحدث دون خوف، بالفرنسية والإنجليزية.",
 
     "pricing.title": "أسعارنا",
-    "pricing.subtitle": "عرض الدخول المدرسي: استفيدوا من الأسعار الترويجية لمدة محدودة.",
+    "pricing.subtitle": "اختاروا مستوى طفلكم لاكتشاف الصيغ والأسعار.",
     "pricing.badge": "الأكثر اختيارًا",
     "pricing.per_month": "/شهريًا",
-    "pricing.choose": "اختر هذه الباقة",
+    "pricing.from": "ابتداءً من",
+    "pricing.view": "شاهد الصيغ",
+    "pricing.choose": "اختر هذه الصيغة",
     "pricing.promo": "العرض الترويجي ساري حتى نهاية الشهر — احجزوا مكانكم الآن",
 
     "pricing.card1.name": "القسم الصغير",
@@ -278,7 +316,23 @@ var translations = {
     "contact.success": "شكرًا لكم! تم إرسال طلبكم بنجاح. ستتواصل معكم مريم قريبًا.",
     "contact.note": "تُرسل معلوماتكم مباشرة إلى مريم عبر Google Sheets، بكل بساطة.",
 
-    "footer.copyright": "© 2026 مريم المهدي — دروس الفرنسية والإنجليزية للأطفال. جميع الحقوق محفوظة."
+    "footer.copyright": "© 2026 مريم المهدي — دروس الفرنسية والإنجليزية للأطفال. جميع الحقوق محفوظة.",
+
+    "reviews.title": "ماذا يقول الآباء",
+    "reviews.subtitle": "عائلات راضية عن تقدم أطفالها.",
+    "reviews.r1.text": "ابني يحب حصصه مع مريم. أصبح يغني بالإنجليزية في البيت الآن!",
+    "reviews.r1.author": "سارة، والدة ياسين (القسم الكبير)",
+    "reviews.r2.text": "متابعة حقيقية، تقارير شهرية، وابنتي اكتسبت ثقة كبيرة في التحدث.",
+    "reviews.r2.author": "كريم، والد لينا (الابتدائي، السنة الثانية)",
+    "reviews.r3.text": "حصص منظمة، ومريم صبورة ومنصتة جيدًا. أنصح بها بنسبة 100%.",
+    "reviews.r3.author": "إيمان، والدة آدم (القسم الصغير)",
+
+    "level.back": "العودة إلى الأسعار",
+    "level.formulas_title": "صيغنا لهذا المستوى",
+    "level.formulas_subtitle": "اختاروا الوتيرة الأنسب لطفلكم.",
+    "level.cta_title": "جاهزون للبدء؟",
+    "level.cta_subtitle": "املأوا استمارة التسجيل في الصفحة الرئيسية، وستتواصل معكم مريم في أقرب وقت.",
+    "level.cta_button": "الذهاب إلى استمارة التسجيل"
   }
 };
 
@@ -310,6 +364,10 @@ function applyLanguage(lang) {
   document.querySelectorAll('.lang-btn').forEach(function (btn) {
     btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
   });
+
+  if (typeof window.renderLevelPage === 'function') {
+    window.renderLevelPage(lang);
+  }
 
   try { localStorage.setItem('site_lang', lang); } catch (e) { /* ignore */ }
 }
