@@ -107,6 +107,8 @@ var translations = {
     "contact.submit": "Envoyer ma demande",
     "contact.success": "Merci ! Votre demande a bien été envoyée. Meryem vous contactera très vite.",
     "contact.note": "Vos informations sont transmises directement à Meryem via Google Sheets, en toute simplicité.",
+    "contact.call": "+212 6 00 00 00 00",
+    "contact.whatsapp": "WhatsApp",
 
     "footer.copyright": "© 2026 Meryem El-Mahdi — Cours de Français & Anglais pour enfants. Tous droits réservés.",
 
@@ -232,6 +234,8 @@ var translations = {
     "contact.submit": "Send my request",
     "contact.success": "Thank you! Your request has been sent. Meryem will contact you shortly.",
     "contact.note": "Your information is sent directly to Meryem via Google Sheets, simply and securely.",
+    "contact.call": "+212 6 00 00 00 00",
+    "contact.whatsapp": "WhatsApp",
 
     "footer.copyright": "© 2026 Meryem El-Mahdi — French & English courses for children. All rights reserved.",
 
@@ -357,6 +361,8 @@ var translations = {
     "contact.submit": "أرسل طلبي",
     "contact.success": "شكرًا لكم! تم إرسال طلبكم بنجاح. ستتواصل معكم مريم قريبًا.",
     "contact.note": "تُرسل معلوماتكم مباشرة إلى مريم عبر Google Sheets، بكل بساطة.",
+    "contact.call": "212 6 00 00 00 00+",
+    "contact.whatsapp": "واتساب",
 
     "footer.copyright": "© 2026 مريم المهدي — دروس الفرنسية والإنجليزية للأطفال. جميع الحقوق محفوظة.",
 
