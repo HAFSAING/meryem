@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Meryem El-Mahdi — Cours de Français & Anglais pour enfants</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,13 +16,26 @@
       <svg class="icon" viewBox="0 0 24 24"><path d="M4 4.5C4 3.7 4.7 3 5.5 3H12v18H5.5C4.7 21 4 20.3 4 19.5V4.5Z"/><path d="M20 4.5C20 3.7 19.3 3 18.5 3H12v18h6.5c.8 0 1.5-.7 1.5-1.5V4.5Z"/></svg>
       Meryem <span class="dot">•</span> El-Mahdi
     </div>
-    <nav class="links">
-      <a href="#about">Professeure</a>
-      <a href="#courses">Cours</a>
-      <a href="#pricing">Tarifs</a>
-      <a href="#contact">Inscription</a>
+
+    <nav class="links" id="navLinks">
+      <a href="#about" data-i18n="nav.about">Professeure</a>
+      <a href="#courses" data-i18n="nav.courses">Cours</a>
+      <a href="#pricing" data-i18n="nav.pricing">Tarifs</a>
+      <a href="#contact" data-i18n="nav.contact">Inscription</a>
+      <a href="#contact" class="nav-cta nav-cta-mobile" data-i18n="nav.cta">Je m'inscris</a>
     </nav>
-    <a href="#contact" class="nav-cta">Je m'inscris</a>
+
+    <div class="nav-right">
+      <div class="lang-switch" role="group" aria-label="Choix de la langue">
+        <button type="button" class="lang-btn" data-lang="fr">FR</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+        <button type="button" class="lang-btn" data-lang="ar">AR</button>
+      </div>
+      <a href="#contact" class="nav-cta nav-cta-desktop" data-i18n="nav.cta">Je m'inscris</a>
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
   </div>
 </header>
 
@@ -31,13 +44,13 @@
   <div class="hero-text">
     <span class="eyebrow">
       <svg class="icon" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M5.6 5.6l2.8 2.8M15.6 15.6l2.8 2.8M18.4 5.6l-2.8 2.8M8.4 15.6l-2.8 2.8"/></svg>
-      Places limitées — Offre de rentrée
+      <span data-i18n="eyebrow">Places limitées — Offre de rentrée</span>
     </span>
-    <h1>Le <span class="hl1">Français</span> et <span class="hl2">l'Anglais</span> deviennent un jeu d'enfant</h1>
-    <p class="lead">Cours en ligne pour la maternelle et le primaire, animés par Meryem El-Mahdi. Des séances vivantes, ludiques et adaptées à chaque enfant, où on apprend en s'amusant.</p>
+    <h1 data-i18n-html="hero.title_html">Le <span class="hl1">Français</span> et <span class="hl2">l'Anglais</span> deviennent un jeu d'enfant</h1>
+    <p class="lead" data-i18n="hero.lead">Cours en ligne pour la maternelle et le primaire, animés par Meryem El-Mahdi. Des séances vivantes, ludiques et adaptées à chaque enfant, où on apprend en s'amusant.</p>
     <div class="hero-buttons">
-      <a href="#pricing" class="btn btn-primary">Voir les tarifs</a>
-      <a href="#contact" class="btn btn-secondary">Réserver un cours d'essai</a>
+      <a href="#pricing" class="btn btn-primary" data-i18n="hero.btn_pricing">Voir les tarifs</a>
+      <a href="#contact" class="btn btn-secondary" data-i18n="hero.btn_trial">Réserver un cours d'essai</a>
     </div>
   </div>
   <div class="hero-visual">
@@ -59,24 +72,24 @@
     <div class="avatar">ME</div>
     <div class="about-content">
       <h3>Meryem El-Mahdi</h3>
-      <span class="about-tag">Professeure de Français & Anglais pour enfants</span>
-      <p>Passionnée par l'enseignement des langues aux tout-petits, Meryem accompagne les enfants de la petite section jusqu'au primaire dans leur apprentissage du français et de l'anglais, à travers des cours en ligne interactifs, des jeux, des chansons et des histoires.</p>
+      <span class="about-tag" data-i18n="about.role">Professeure de Français & Anglais pour enfants</span>
+      <p data-i18n="about.bio">Passionnée par l'enseignement des langues aux tout-petits, Meryem accompagne les enfants de la petite section jusqu'au primaire dans leur apprentissage du français et de l'anglais, à travers des cours en ligne interactifs, des jeux, des chansons et des histoires.</p>
       <div class="tags">
         <span class="tag">
           <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg>
-          Petite & Moyenne section
+          <span data-i18n="about.tag1">Petite & Moyenne section</span>
         </span>
         <span class="tag">
           <svg class="icon" viewBox="0 0 24 24"><path d="M12 3L2 8l10 5 8-4.2V16"/><path d="M6 10.5V15c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.5"/></svg>
-          Grande section
+          <span data-i18n="about.tag2">Grande section</span>
         </span>
         <span class="tag">
           <svg class="icon" viewBox="0 0 24 24"><path d="M4 4.5C4 3.7 4.7 3 5.5 3H12v18H5.5C4.7 21 4 20.3 4 19.5V4.5Z"/><path d="M20 4.5C20 3.7 19.3 3 18.5 3H12v18h6.5c.8 0 1.5-.7 1.5-1.5V4.5Z"/></svg>
-          Primaire
+          <span data-i18n="about.tag3">Primaire</span>
         </span>
         <span class="tag">
           <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="1.5"/><path d="M2 20h20"/></svg>
-          100% en ligne
+          <span data-i18n="about.tag4">100% en ligne</span>
         </span>
       </div>
     </div>
@@ -86,36 +99,36 @@
 <!-- COURSES -->
 <section class="courses" id="courses">
   <div class="section-inner">
-    <h2 class="section-title">Nos cours</h2>
-    <p class="section-sub">Des programmes adaptés à chaque âge, pour progresser en douceur en français et en anglais.</p>
+    <h2 class="section-title" data-i18n="courses.title">Nos cours</h2>
+    <p class="section-sub" data-i18n="courses.subtitle">Des programmes adaptés à chaque âge, pour progresser en douceur en français et en anglais.</p>
     <div class="cards">
       <div class="card">
         <div class="icon-circle">
           <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg>
         </div>
-        <h4>Petite & Moyenne section</h4>
-        <p>Éveil aux langues à travers des chansons, jeux et histoires simples.</p>
+        <h4 data-i18n="courses.card1.title">Petite & Moyenne section</h4>
+        <p data-i18n="courses.card1.desc">Éveil aux langues à travers des chansons, jeux et histoires simples.</p>
       </div>
       <div class="card">
         <div class="icon-circle">
           <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="8.5" cy="10" r="1"/><circle cx="15.5" cy="9" r="1"/><circle cx="12" cy="15" r="1"/><path d="M15 5.5c1.5 1 1 3-.5 3s-1.5 2 0 3"/></svg>
         </div>
-        <h4>Grande section</h4>
-        <p>Vocabulaire, lettres et premières phrases, en français et en anglais.</p>
+        <h4 data-i18n="courses.card2.title">Grande section</h4>
+        <p data-i18n="courses.card2.desc">Vocabulaire, lettres et premières phrases, en français et en anglais.</p>
       </div>
       <div class="card">
         <div class="icon-circle">
           <svg class="icon" viewBox="0 0 24 24"><path d="M4 4.5C4 3.7 4.7 3 5.5 3H12v18H5.5C4.7 21 4 20.3 4 19.5V4.5Z"/><path d="M20 4.5C20 3.7 19.3 3 18.5 3H12v18h6.5c.8 0 1.5-.7 1.5-1.5V4.5Z"/></svg>
         </div>
-        <h4>Primaire</h4>
-        <p>Lecture, écriture, grammaire et conversation, avec un suivi des devoirs.</p>
+        <h4 data-i18n="courses.card3.title">Primaire</h4>
+        <p data-i18n="courses.card3.desc">Lecture, écriture, grammaire et conversation, avec un suivi des devoirs.</p>
       </div>
       <div class="card">
         <div class="icon-circle">
           <svg class="icon" viewBox="0 0 24 24"><path d="M21 12a8 8 0 1 1-3.3-6.5"/><path d="M21 5v4h-4"/></svg>
         </div>
-        <h4>Conversation & confiance</h4>
-        <p>Ateliers d'expression orale pour parler sans crainte, en français et en anglais.</p>
+        <h4 data-i18n="courses.card4.title">Conversation & confiance</h4>
+        <p data-i18n="courses.card4.desc">Ateliers d'expression orale pour parler sans crainte, en français et en anglais.</p>
       </div>
     </div>
   </div>
@@ -124,63 +137,75 @@
 <!-- PRICING -->
 <section class="pricing" id="pricing">
   <div class="section-inner">
-    <h2 class="section-title">Nos tarifs</h2>
-    <p class="section-sub">Offre de rentrée : profitez des prix promo, valables pour un temps limité.</p>
-    <div class="price-cards">
+    <h2 class="section-title" data-i18n="pricing.title">Nos tarifs</h2>
+    <p class="section-sub" data-i18n="pricing.subtitle">Offre de rentrée : profitez des prix promo, valables pour un temps limité.</p>
+    <div class="price-cards price-cards-4">
 
       <div class="price-card">
-        <h4>Pack Découverte</h4>
-        <p class="desc">4 séances / mois</p>
-        <span class="old-price">600 DH</span>
-        <div class="price">400 <small>DH/mois</small></div>
-        <span class="save">Vous économisez 200 DH</span>
+        <h4 data-i18n="pricing.card1.name">Petite section</h4>
+        <p class="desc" data-i18n="pricing.card1.desc">Maternelle — éveil aux langues</p>
+        <span class="old-price">150 DH</span>
+        <div class="price">99 <small>DH<span data-i18n="pricing.per_month">/mois</span></small></div>
+        <span class="save" data-i18n="pricing.card1.save">Vous économisez 51 DH</span>
         <ul>
-          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>4 séances en ligne (1h)</li>
-          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Français ou Anglais au choix</li>
-          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Support pédagogique inclus</li>
+          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pricing.card1.li1">Français et Anglais</span></li>
+          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pricing.card1.li2">Chansons, jeux et comptines</span></li>
+          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pricing.card1.li3">Séances courtes et adaptées</span></li>
         </ul>
-        <a href="#contact" class="btn btn-primary">Choisir ce pack</a>
+        <a href="#contact" class="btn btn-primary" data-i18n="pricing.choose">Choisir ce tarif</a>
+      </div>
+
+      <div class="price-card">
+        <h4 data-i18n="pricing.card2.name">Grande section</h4>
+        <p class="desc" data-i18n="pricing.card2.desc">Maternelle — premiers pas</p>
+        <span class="old-price">220 DH</span>
+        <div class="price">149 <small>DH<span data-i18n="pricing.per_month">/mois</span></small></div>
+        <span class="save" data-i18n="pricing.card2.save">Vous économisez 71 DH</span>
+        <ul>
+          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pricing.card2.li1">Français ET Anglais</span></li>
+          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pricing.card2.li2">Vocabulaire et premières phrases</span></li>
+          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pricing.card2.li3">Activités ludiques chaque semaine</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary" data-i18n="pricing.choose">Choisir ce tarif</a>
       </div>
 
       <div class="price-card featured">
         <span class="badge">
           <svg class="icon" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l2.9 6.6 7.1.6-5.4 4.7 1.7 7-6.3-3.8-6.3 3.8 1.7-7L2 9.2l7.1-.6L12 2z"/></svg>
-          Le plus choisi
+          <span data-i18n="pricing.badge">Le plus choisi</span>
         </span>
-        <h4>Pack Essentiel</h4>
-        <p class="desc">8 séances / mois</p>
-        <span class="old-price">900 DH</span>
-        <div class="price">600 <small>DH/mois</small></div>
-        <span class="save">Vous économisez 300 DH</span>
+        <h4 data-i18n="pricing.card3.name">Primaire — 1ère à 3ème</h4>
+        <p class="desc" data-i18n="pricing.card3.desc">Bases solides en français et anglais</p>
+        <span class="old-price">280 DH</span>
+        <div class="price">199 <small>DH<span data-i18n="pricing.per_month">/mois</span></small></div>
+        <span class="save" data-i18n="pricing.card3.save">Vous économisez 81 DH</span>
         <ul>
-          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>8 séances en ligne (1h)</li>
-          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Français ET Anglais</li>
-          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Suivi personnalisé + devoirs</li>
-          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Rapport mensuel aux parents</li>
+          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pricing.card3.li1">Français ET Anglais</span></li>
+          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pricing.card3.li2">Lecture, écriture et grammaire</span></li>
+          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pricing.card3.li3">Suivi des devoirs</span></li>
         </ul>
-        <a href="#contact" class="btn btn-primary">Choisir ce pack</a>
+        <a href="#contact" class="btn btn-primary" data-i18n="pricing.choose">Choisir ce tarif</a>
       </div>
 
       <div class="price-card">
-        <h4>Pack Intensif</h4>
-        <p class="desc">12 séances / mois</p>
-        <span class="old-price">1000 DH</span>
-        <div class="price">700 <small>DH/mois</small></div>
-        <span class="save">Vous économisez 300 DH</span>
+        <h4 data-i18n="pricing.card4.name">Primaire — 4ème à 6ème</h4>
+        <p class="desc" data-i18n="pricing.card4.desc">Niveau avancé et préparation aux examens</p>
+        <span class="old-price">350 DH</span>
+        <div class="price">249 <small>DH<span data-i18n="pricing.per_month">/mois</span></small></div>
+        <span class="save" data-i18n="pricing.card4.save">Vous économisez 101 DH</span>
         <ul>
-          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>12 séances en ligne (1h)</li>
-          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Français ET Anglais</li>
-          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Ateliers de conversation</li>
-          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>Suivi hebdomadaire détaillé</li>
+          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pricing.card4.li1">Français ET Anglais avancé</span></li>
+          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pricing.card4.li2">Préparation aux examens</span></li>
+          <li><svg class="icon" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="pricing.card4.li3">Rapport mensuel aux parents</span></li>
         </ul>
-        <a href="#contact" class="btn btn-primary">Choisir ce pack</a>
+        <a href="#contact" class="btn btn-primary" data-i18n="pricing.choose">Choisir ce tarif</a>
       </div>
 
     </div>
     <div class="promo-note-wrap">
       <p class="promo-note">
         <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-        Offre promo valable jusqu'à la fin du mois — Réservez votre place dès maintenant
+        <span data-i18n="pricing.promo">Offre promo valable jusqu'à la fin du mois — Réservez votre place dès maintenant</span>
       </p>
     </div>
   </div>
@@ -189,65 +214,65 @@
 <!-- CONTACT / FORM -->
 <section class="contact" id="contact">
   <div class="section-inner">
-    <h2 class="section-title">Inscrivez votre enfant</h2>
-    <p class="section-sub">Remplissez le formulaire ci-dessous, Meryem vous contactera pour organiser le premier cours.</p>
+    <h2 class="section-title" data-i18n="contact.title">Inscrivez votre enfant</h2>
+    <p class="section-sub" data-i18n="contact.subtitle">Remplissez le formulaire ci-dessous, Meryem vous contactera pour organiser le premier cours.</p>
 
     <div class="form-box">
       <form id="inscriptionForm" action="PASTE_YOUR_GOOGLE_FORM_ACTION_URL_HERE" method="POST" target="hiddenIframe">
         <div class="form-row">
           <div class="form-group">
-            <label for="parentName">Nom du parent</label>
-            <input type="text" id="parentName" name="entry.XXXXXXXXX1" required placeholder="Votre nom">
+            <label for="parentName" data-i18n="contact.label_parent">Nom du parent</label>
+            <input type="text" id="parentName" name="entry.XXXXXXXXX1" required data-i18n-placeholder="contact.placeholder_parent" placeholder="Votre nom">
           </div>
           <div class="form-group">
-            <label for="phone">Téléphone / WhatsApp</label>
-            <input type="tel" id="phone" name="entry.XXXXXXXXX2" required placeholder="06 XX XX XX XX">
+            <label for="phone" data-i18n="contact.label_phone">Téléphone / WhatsApp</label>
+            <input type="tel" id="phone" name="entry.XXXXXXXXX2" required data-i18n-placeholder="contact.placeholder_phone" placeholder="06 XX XX XX XX">
           </div>
         </div>
         <div class="form-row">
           <div class="form-group">
-            <label for="childName">Nom de l'enfant</label>
-            <input type="text" id="childName" name="entry.XXXXXXXXX3" required placeholder="Nom de l'enfant">
+            <label for="childName" data-i18n="contact.label_child">Nom de l'enfant</label>
+            <input type="text" id="childName" name="entry.XXXXXXXXX3" required data-i18n-placeholder="contact.placeholder_child" placeholder="Nom de l'enfant">
           </div>
           <div class="form-group">
-            <label for="level">Niveau</label>
+            <label for="level" data-i18n="contact.label_level">Niveau</label>
             <select id="level" name="entry.XXXXXXXXX4" required>
-              <option value="">Choisir...</option>
-              <option>Petite section</option>
-              <option>Moyenne section</option>
-              <option>Grande section</option>
-              <option>Primaire</option>
+              <option value="" data-i18n="contact.opt_choose">Choisir...</option>
+              <option value="Petite section" data-i18n="contact.opt_petite">Petite section</option>
+              <option value="Moyenne section" data-i18n="contact.opt_moyenne">Moyenne section</option>
+              <option value="Grande section" data-i18n="contact.opt_grande">Grande section</option>
+              <option value="Primaire" data-i18n="contact.opt_primaire">Primaire</option>
             </select>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group full">
-            <label for="subject">Matière souhaitée</label>
+            <label for="subject" data-i18n="contact.label_subject">Matière souhaitée</label>
             <select id="subject" name="entry.XXXXXXXXX5" required>
-              <option value="">Choisir...</option>
-              <option>Français</option>
-              <option>Anglais</option>
-              <option>Français + Anglais</option>
+              <option value="" data-i18n="contact.opt_choose">Choisir...</option>
+              <option value="Français" data-i18n="contact.opt_fr">Français</option>
+              <option value="Anglais" data-i18n="contact.opt_en">Anglais</option>
+              <option value="Français + Anglais" data-i18n="contact.opt_both">Français + Anglais</option>
             </select>
           </div>
         </div>
         <div class="form-row">
           <div class="form-group full">
-            <label for="message">Message (facultatif)</label>
-            <textarea id="message" name="entry.XXXXXXXXX6" placeholder="Précisez vos disponibilités ou besoins..."></textarea>
+            <label for="message" data-i18n="contact.label_message">Message (facultatif)</label>
+            <textarea id="message" name="entry.XXXXXXXXX6" data-i18n-placeholder="contact.placeholder_message" placeholder="Précisez vos disponibilités ou besoins..."></textarea>
           </div>
         </div>
         <button type="submit" class="form-submit">
           <svg class="icon" viewBox="0 0 24 24"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
-          Envoyer ma demande
+          <span data-i18n="contact.submit">Envoyer ma demande</span>
         </button>
       </form>
       <iframe name="hiddenIframe" id="hiddenIframe" style="display:none;"></iframe>
       <p class="form-success" id="successMsg">
         <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>
-        Merci ! Votre demande a bien été envoyée. Meryem vous contactera très vite.
+        <span data-i18n="contact.success">Merci ! Votre demande a bien été envoyée. Meryem vous contactera très vite.</span>
       </p>
-      <p class="form-note">Vos informations sont transmises directement à Meryem via Google Sheets, en toute simplicité.</p>
+      <p class="form-note" data-i18n="contact.note">Vos informations sont transmises directement à Meryem via Google Sheets, en toute simplicité.</p>
     </div>
   </div>
 </section>
@@ -258,12 +283,12 @@
     Meryem El-Mahdi
   </div>
   <div class="foot-links">
-    <a href="#about">Professeure</a>
-    <a href="#courses">Cours</a>
-    <a href="#pricing">Tarifs</a>
-    <a href="#contact">Inscription</a>
+    <a href="#about" data-i18n="nav.about">Professeure</a>
+    <a href="#courses" data-i18n="nav.courses">Cours</a>
+    <a href="#pricing" data-i18n="nav.pricing">Tarifs</a>
+    <a href="#contact" data-i18n="nav.contact">Inscription</a>
   </div>
-  <small>© 2026 Meryem El-Mahdi — Cours de Français & Anglais pour enfants. Tous droits réservés.</small>
+  <small data-i18n="footer.copyright">© 2026 Meryem El-Mahdi — Cours de Français & Anglais pour enfants. Tous droits réservés.</small>
 </footer>
 
 <script src="script.js"></script>
